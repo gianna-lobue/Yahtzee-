@@ -1,4 +1,4 @@
-// I used online resources (Google) to learn JavaScript concepts such as arrays, loops, and functions. All code in this program was written by me.
+//I used online resources (Google) to learn JavaScript concepts such as arrays, loops, and functions. All code in this program was written by me.
 
 // screen currently being shown 
 let currentScreen = "menu";
@@ -119,8 +119,19 @@ function drawInstructions() {
   }
   textSize(18);
   fill(0);
-  textAlign(LEFT);
-  text("Instructions:\n\n1. Roll the dice up to 3 times per turn.\n2. Choose a category to score your dice.\n3. The game ends after all categories are filled.\n\nGood luck!", 50, 50);
+  textAlign(CENTER);
+  text(
+  "How to Play Yahtzee:\n\n" +
+  "1. Click ROLL to roll all 5 dice.\n" +
+  "2. You may roll up to 3 times each turn.\n" +
+  "3. Click a die to HOLD it and keep its value.\n" +
+  "4. Roll again to reroll the unheld dice.\n" +
+  "5. When satisfied, click a score category.\n" +
+  "   Example: If you have three 4s, click Fours\n" +
+  "   to score 12 points.\n" +
+  "6. After scoring, a new turn begins.\n" +
+  "7. Fill every category to finish the game.\n\n" +
+  "Goal: Earn the highest total score possible!",200, 200);
 }
 
 // game screen 
