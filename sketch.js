@@ -1,4 +1,4 @@
-//I used online resources (Google) to learn JavaScript concepts such as arrays, loops, and functions. All code in this program was written by me.
+// I used online resources (Google) to learn JavaScript concepts such as arrays, loops, and functions. All code in this program was written by me.
 
 // screen currently being shown 
 let currentScreen = "menu";
@@ -133,20 +133,27 @@ function drawInstructions() {
   "7. Fill every category to finish the game.\n\n" +
   "Goal: Earn the highest total score possible!",200, 200);
 }
-
+ 
 // game screen 
 function drawGame() {
   textSize(20);
   fill(0);
   textAlign(CENTER);
-  //show remaining rolls 
-  text("Rolls left:"+rollsLeft, width/2, height/2);
-  //draw dice 
-  for (let i=0; i<5;i++){  drawDie(100+i*90,150,dice[i],held[i]);
-  }
- drawScorecard();
-}
 
+  //show remaining rolls 
+  text("Rolls left: " + rollsLeft, width/2, 50);
+
+  // helper text
+  textSize(14);
+  text("Roll dice, click dice to hold, then click a score category.", width/2, 80);
+
+  //draw dice 
+  for (let i = 0; i < 5; i++){
+    drawDie(100 + i * 90, 150, dice[i], held[i]);
+  }
+
+  drawScorecard();
+}
 // draw a single die 
 function drawDie(x,y,value,isHeld){
   fill(isHeld?'lightgreen':255);
