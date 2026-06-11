@@ -11,3 +11,7 @@ Most of my feedback was players did not know how to play the game so improving i
 
 ** update 6/9
 fixed instructions screen 
+
+
+***update 6/11
+fixed gameplay to make the game more understandable 
